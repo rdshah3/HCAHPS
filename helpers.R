@@ -33,7 +33,7 @@ percent_map <- function(var, color, plot.title = "Title", start.date, end.date) 
   # Add caption
   survey.dates <- paste("Survey dates: ", start.date, " - ", end.date, sep = "")
   source.data <- "Data source: http://www.healthdata.gov/dataset/patient-survey-hcahps-state"
-  caption <- paste(survey.dates, "Maryland: Data suppressed by CMS for one or more quarters.", source.data, sep="\n")
+  caption <- paste(survey.dates, source.data, sep="\n")
   g <- arrangeGrob(p, bottom = textGrob(caption, x = 0, hjust = 0.0, vjust=0.1, gp = gpar(fontface = "italic", fontsize = 12)))
   grid.draw(g)
 }
