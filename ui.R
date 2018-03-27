@@ -1,8 +1,8 @@
 # ui.R
 
 shinyUI(fluidPage(
-  titlePanel(img(src="download.png", height=59, width=233)
-  ),
+  tags$img(src = "download.png", height=59, width=233),
+  
   sidebarLayout( 
     sidebarPanel(
       helpText("Select the survey question you would like to view"),
